@@ -50,7 +50,7 @@ if fluent_texts or other_texts:
     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
     # Train the model
-    model.fit(padded_sequences, labels, epochs=10, batch_size=32, validation_split=0.2)
+    model.fit(padded_sequences, labels, epochs=5, batch_size=16, validation_split=0.2, verbose=1) # batchsize from 32 to 16
 
     # Load text files from the "test" subfolder
     test_folder = "test"
