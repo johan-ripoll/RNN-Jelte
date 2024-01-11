@@ -1,0 +1,7 @@
+Started at: 2024-01-11 10:03:23.331684
+Epoch 1/1
+Training ended at: 2024-01-11 10:03:31.191281
+1/1 [==============================] - 4931s 4931s/step
+The text in 'test\testfile.txt' is not predicted to be fluent Dutch.
+Finished at: 2024-01-11 11:25:42.367412
+Total execution time: 1:22:19.035728
