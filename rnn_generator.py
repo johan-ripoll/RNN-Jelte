@@ -102,8 +102,6 @@ if fluent_texts or other_texts:
 	# Training finished - Test step below
     end_time = datetime.now()
     print(f"Training ended at: {end_time}")
-    elapsed_time = end_time - start_time
-    print(f"Total execution time: {elapsed_time}")
 
     # Load text files from the "test" subfolder
     test_folder = "test"
@@ -127,3 +125,8 @@ if fluent_texts or other_texts:
                     f"The text in '{file_path}' is not predicted to be fluent Dutch.")
 else:
     print("No text files for training. Cannot make predictions.")
+
+test_end_time = datetime.now()
+print(f"Finished at: {test_end_time}")
+elapsed_time = test_end_time - start_time
+print(f"Total execution time: {elapsed_time}")
